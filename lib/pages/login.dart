@@ -110,7 +110,7 @@ class Login extends StatelessWidget {
                               child: CustomButton(
                                 label: 'Login',
                                 labelColour: Colors.white,
-                                backgroundColour: Colors.red,
+                                backgroundColour: Colors.lightGreen[700],
                                 shadowColour:
                                     Color(0xff866DC9).withOpacity(0.16),
                                 onPressed: () {
@@ -149,10 +149,10 @@ class Login extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Read our Terms & Conditions.',
+                  'Read our Terms and Conditions.',
                   style: TextStyle(
                     fontSize: 15.0,
-                    color: Colors.red,
+                    color: Colors.lightGreen[700],
                     fontWeight: FontWeight.bold,
                   ),
                 ),

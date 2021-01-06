@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:online_shopping/models/Product.dart';
 
 import '../../../constants.dart';
@@ -30,7 +31,7 @@ class ItemCard extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
-                  color: Colors.grey,
+                  color: Colors.grey[300],
                 ),
               ),
               child: Hero(
@@ -39,12 +40,18 @@ class ItemCard extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 4,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
               // products is out demo list
               product.title,
-              style: TextStyle(color: kTextLightColor),
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
             ),
           ),
           Row(
@@ -52,15 +59,15 @@ class ItemCard extends StatelessWidget {
             children: [
               Text(
                 "\$${product.price}",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.normal),
               ),
               Row(
                 children: [
-                  Icon(Icons.star, size: 20, color: Colors.red),
-                  Icon(Icons.star, size: 20, color: Colors.red),
-                  Icon(Icons.star, size: 20, color: Colors.red),
-                  Icon(Icons.star_outline, size: 20, color: Colors.red),
-                  Icon(Icons.star_outline, size: 20, color: Colors.red),
+                  Icon(Icons.star, size: 14, color: Colors.amber[700]),
+                  Icon(Icons.star, size: 14, color: Colors.amber[700]),
+                  Icon(Icons.star, size: 14, color: Colors.amber[700]),
+                  Icon(Icons.star_outline, size: 14, color: Colors.amber[700]),
+                  Icon(Icons.star_outline, size: 14, color: Colors.amber[700]),
                 ],
               ),
             ],

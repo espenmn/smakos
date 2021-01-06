@@ -24,7 +24,7 @@ class SignupPage extends StatelessWidget {
             height: SizeConfig.height(53.9),
             color: Color(0xFFFAFBFD),
             child: Padding(
-              padding: const EdgeInsets.only(top: 30.0),
+              padding: const EdgeInsets.only(top: 40.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -59,56 +59,56 @@ class SignupPage extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(
-                                  left: 35.0, right: 35.0, top: 20.0),
+                                  left: 35.0, right: 35.0, top: 0.0),
                               child: CustomTextField(
                                 hintText: 'First Name',
                                 icon: Icon(
                                   CupertinoIcons.profile_circled,
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(
-                                  left: 35.0, right: 35.0, top: 20.0),
+                                  left: 35.0, right: 35.0, top: 10.0),
                               child: CustomTextField(
                                 hintText: 'Last Name',
                                 icon: Icon(
                                   CupertinoIcons.profile_circled,
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(
-                                  left: 35.0, right: 35.0, top: 20.0),
+                                  left: 35.0, right: 35.0, top: 10.0),
                               child: CustomTextField(
                                 hintText: 'Email',
                                 icon: Icon(
                                   Icons.mail,
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(
-                                  left: 35.0, right: 35.0, top: 20.0),
+                                  left: 35.0, right: 35.0, top: 10.0),
                               child: CustomTextField(
                                 hintText: 'Password',
                                 icon: Icon(
                                   Icons.vpn_key,
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(
-                                  left: 35.0, right: 35.0, top: 20.0),
+                                  left: 35.0, right: 35.0, top: 10.0),
                               child: CustomTextField(
                                 hintText: '+229 99 24 97 02',
                                 icon: Icon(
                                   Icons.phone_android,
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                               ),
                             ),
@@ -119,9 +119,9 @@ class SignupPage extends StatelessWidget {
                                 top: 30.0,
                               ),
                               child: CustomButton(
-                                label: 'Register Now',
+                                label: 'Register Now ',
                                 labelColour: Colors.white,
-                                backgroundColour: Colors.red,
+                                backgroundColour: Colors.lightGreen[600],
                                 shadowColour:
                                     Color(0xff866DC9).withOpacity(0.16),
                                 onPressed: () {
@@ -158,10 +158,10 @@ class SignupPage extends StatelessWidget {
                 ),
               ),
               Text(
-                'Read our Terms & Conditions.',
+                'Terms & Conditions.',
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: Colors.red,
+                  color: Colors.blueGrey,
                   fontWeight: FontWeight.bold,
                 ),
               ),

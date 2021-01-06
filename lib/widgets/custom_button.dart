@@ -28,14 +28,14 @@ class CustomButton extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
               color: labelColour,
-              fontSize: 20.0,
+              fontSize: 23.0,
             ),
           ),
         ),
         decoration: BoxDecoration(
           color: backgroundColour,
           borderRadius: BorderRadius.all(
-            Radius.circular(30.0),
+            Radius.circular(10.0),
           ),
           boxShadow: [
             BoxShadow(
